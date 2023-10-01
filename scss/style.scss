@@ -1,0 +1,110 @@
+.contenedorLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    width: auto;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 2ms ease-in-out;
+    filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.menuDesplegable {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 5%;
+    width: 5%;
+    background: none;
+    color: white;
+    border: none;
+
+    img {
+        width: 300%;
+    }
+}
+.menuDesplegable img:hover {
+    transform: scale(1.1);
+    transition: all 2ms ease-in-out;
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+}
+
+.menuDesplegable2 {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    height: 5%;
+    width: 5%;
+    background: none;
+    color: white;
+    border: none;
+
+    img {
+        width: 300%;
+
+    }
+}
+
+.menuDesplegable2 img:hover {
+    transform: scale(1.1);
+    transition: all 2ms ease-in-out;
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+}
+.menuDesplegable3 {
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    height: 5%;
+    width: 5%;
+    background: none;
+    color: white;
+    border: none;
+    img{
+        width: 300%;
+        height: 500%;
+    }
+}
+.menuDesplegable3 img:hover {
+    transform: scale(1.1);
+    transition: all 2ms ease-in-out;
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+}
+.menuDesplegable4 {
+    display: flex;
+    position: absolute;
+    bottom: 19%;
+    right: 17%;
+    height: 5%;
+    width: 5%;
+    background: none;
+    color: white;
+    border: none;
+    img{
+        width: 400%;
+        height: 500%;
+    } 
+}
+.menuDesplegable4 img:hover {
+    transform: scale(1.1);
+    transition: all 2ms ease-in-out;
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+}
