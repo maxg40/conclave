@@ -8,6 +8,9 @@
 }
 
 .logo {
+  display: flex;
+  position: relative;
+  align-items: center;
   width: 50%;
 }
 
@@ -26,17 +29,13 @@ body {
 
 .menuDesplegable {
   display: flex;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  height: 5%;
-  width: 5%;
+  position: relative;
+  align-items: start;
   background: none;
-  color: white;
   border: none;
 }
 .menuDesplegable img {
-  width: 300%;
+  width: 20%;
 }
 
 .menuDesplegable img:hover {
@@ -47,17 +46,14 @@ body {
 
 .menuDesplegable2 {
   display: flex;
-  position: absolute;
-  top: 10%;
-  right: 15%;
-  height: 5%;
-  width: 5%;
+  position: relative;
+  align-items: start;
+  flex-direction: row-reverse;
   background: none;
-  color: white;
   border: none;
 }
 .menuDesplegable2 img {
-  width: 300%;
+  width: 20%;
 }
 
 .menuDesplegable2 img:hover {
@@ -68,18 +64,13 @@ body {
 
 .menuDesplegable3 {
   display: flex;
-  position: absolute;
-  bottom: 20%;
-  left: 10%;
-  height: 5%;
-  width: 5%;
+  position: relative;
+  align-items: start;
   background: none;
-  color: white;
   border: none;
 }
 .menuDesplegable3 img {
-  width: 300%;
-  height: 500%;
+  width: 30%;
 }
 
 .menuDesplegable3 img:hover {
@@ -90,24 +81,48 @@ body {
 
 .menuDesplegable4 {
   display: flex;
-  position: absolute;
-  bottom: 19%;
-  right: 17%;
-  height: 5%;
-  width: 5%;
+  align-items: end;
+  flex-direction: row-reverse;
+  margin: 0;
+  padding: 0;
   background: none;
-  color: white;
   border: none;
 }
 .menuDesplegable4 img {
-  width: 400%;
-  height: 500%;
+  width: 30%;
 }
 
 .menuDesplegable4 img:hover {
   transform: scale(1.1);
   transition: all 2ms ease-in-out;
   filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+}
+
+.contenedorGrid {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  grid-area: header;
+  flex-direction: row;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
