@@ -153,6 +153,7 @@ body {
   position: sticky;
 }
 .descripcionShow .textoShow {
+  transform: translateX(-100%);
   color: aliceblue;
   display: block;
   position: fixed;
@@ -167,6 +168,7 @@ body {
   position: sticky;
 }
 .descripcionBanda .textoLogo {
+  transform: translateX(-50%);
   color: aliceblue;
   display: block;
   position: fixed;
@@ -195,6 +197,7 @@ body {
   position: sticky;
 }
 .descripcionTemas .textoTemas {
+  transform: translateX(-100%);
   color: aliceblue;
   display: block;
   position: fixed;

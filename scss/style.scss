@@ -163,6 +163,7 @@ body {
     display: block;
     position:sticky;
     .textoShow{
+    transform: translateX(-100%);
     color: aliceblue;
     display: block;
     position:fixed ;
@@ -177,6 +178,7 @@ body {
     display: block;
     position:sticky;
     .textoLogo{
+    transform: translateX(-50%);
     color: aliceblue;
     display: block;
     position:fixed ;
@@ -203,6 +205,7 @@ body {
     display: block;
     position:sticky;
     .textoTemas{
+    transform: translateX(-100%);
     color: aliceblue;
     display: block;
     position:fixed ;
