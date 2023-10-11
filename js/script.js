@@ -112,4 +112,31 @@ botonLogo.onclick =() =>{
         const panelTemas = document.querySelector ('.descripcionTemas')
         panelTemas.innerHTML ='';
     }
+    // menu show
+    const botonShow = document.querySelector('.menuDesplegable2');
+    botonShow.onclick = () =>{
+        contenedorMenu.innerHTML = `
+        <div class="contenedorShow">
+        <button class="menuDesplegable"><img id="contacto" src="./img/contacto.png" alt="contacto"><span class="descripcionContacto"></span></button>
+        <button class="menuDesplegable2 "><img id="show" src="./img/show.png" alt="shows/presentaciones"><span class="descripcionShow"></span></button>
+        <button class="contenedorLogo "><img class="logo" src="./img/conclave letra.png" alt="logo de banda conclave"> <span class="descripcionBanda"></span></button>
+        <button class="menuDesplegable3"><img src="./img/integrantes.png" alt="integrantes"><span class="descripcionIntegrantes"></span></button>
+        <button class="menuDesplegable4 "><img src="./img/temas.png" alt="temas"><span class="descripcionTemas"></span></button>
+        </div>
+        <div class="contenedorEventos">
+        <div class="cardShow">
+        <iframe src="https://www.youtube.com/embed/478a1It8ubc?si=coCUwCL859FzCjJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4>Evento del dia 07/10/2023</h4>
+        <h5>Rufino, Santa Fe - Primer Oktobeer Fest AguilaMitch (bar/cerveceria)</h5>
+        </div>
+        <div class="proximoShow"><img src="/img/ideogram.jpeg" alt="imagen de espera"><h3>En espera</h3></div>
+        </div>
+        `;
+        const quitarScale = document.querySelectorAll ('.contenedorShow img');
+        quitarScale.forEach((quitarScale)=>{
+            quitarScale.style.transform = 'scale(1)';
+        })
+        const acomodarLogo = document.querySelector('.contenedorLogo')
+        acomodarLogo.style.width = '10%';
+    }
 };

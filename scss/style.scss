@@ -23,6 +23,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: black;
@@ -213,5 +214,81 @@ body {
     width: 150px;
     background-color: rgb(0, 0, 0);
     opacity: 80%;
+    }
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-bottom: 50px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 60%;
+}
+.contenedorShow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        aspect-ratio: 16/9;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        
+    }
+}
+.contenedorEventos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    height: auto;
+    width: 90%;
+    .cardShow{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: bisque;
+        border-radius: 5%;
+        object-fit: contain;
+        text-align: center;
+        column-count: 1;
+        font-family: 'Courier New', Courier, monospace;
+        iframe{
+            align-self: center;
+            width: 90%;
+            transform: translateY(10%);
+        }
+        
+    }
+    .proximoShow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+        width: 100%;
+        border-radius: 5%;
+        object-fit: contain;
+        h3{
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-size: 100%;
+        }
+        img{
+            width: 50%;
+            border-radius: 5%;
+            transform: translateY(1%);
+        }
     }
 }
