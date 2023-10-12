@@ -232,6 +232,7 @@ h3 {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  margin: 20px;
 }
 .contenedorShow img {
   aspect-ratio: 16/9;
@@ -246,23 +247,28 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 10%;
-  height: auto;
   width: 90%;
 }
 .contenedorEventos .cardShow {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
   border-radius: 5%;
   object-fit: contain;
   text-align: center;
   column-count: 1;
   font-family: "Courier New", Courier, monospace;
 }
+.contenedorEventos .cardShow h4 {
+  text-decoration: underline;
+}
 .contenedorEventos .cardShow iframe {
   align-self: center;
-  width: 90%;
+  width: 100%;
+  height: auto;
   transform: translateY(10%);
 }
 .contenedorEventos .proximoShow {
@@ -279,9 +285,15 @@ h3 {
   font-family: "Courier New", Courier, monospace;
   color: black;
   font-size: 100%;
+  text-decoration: underline;
+}
+.contenedorEventos .proximoShow h5 {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 100%;
 }
 .contenedorEventos .proximoShow img {
-  width: 50%;
+  width: 90%;
   border-radius: 5%;
   transform: translateY(1%);
 }
