@@ -222,6 +222,7 @@ h1{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    width: 80%;
     padding-bottom: 50px;
 }
 h3 {
@@ -302,5 +303,43 @@ h3 {
             border-radius: 5%;
             transform: translateY(1%);
         }
+    }
+}
+.contenedorIntegrantes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10%;
+}
+.fotoIntegrante{
+    display: flex;
+    width: 100%;
+    img{
+        width: 100%;
+
+    }
+}
+.integrante{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 1%;
+    h3{
+        color: white;
+        font-size: 100%;
+    }
+    h4{
+        font-size: 70%;
+        color: white;
+    }
+    .icono{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 20%;
+        transform: translateX(200%);
     }
 }
