@@ -27,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     background: black;
+    width: auto;
 }
 
 .menuDesplegable {
@@ -309,14 +310,16 @@ h3 {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    align-content: center;
-    margin: 10%;
+    align-items: center;
+    margin: 5% 15% 0 15%;
+    width: 100%;
 }
 .fotoIntegrante{
-    display: flex;
-    width: 100%;
+    display: block;
     img{
-        width: 100%;
+        
+        width:100%;
+        height: auto;
 
     }
 }
@@ -325,11 +328,19 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    min-width: 50px;
+    height: auto;
     margin: 1%;
+    
     h3{
+        display: flex;
         color: white;
-        font-size: 100%;
+        font-size: 90%;
+        width: auto;
+        text-align: center;
+        column-count: 1;
+        column-width: auto;
+        object-fit: contain;
     }
     h4{
         font-size: 70%;
